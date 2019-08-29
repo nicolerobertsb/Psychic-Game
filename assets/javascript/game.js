@@ -22,6 +22,7 @@ function reset() {
     computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 }
 
+// ADDED A FUN ALERT//
 var confirmPsychic = confirm("Are you a Psychic?");
 if (confirmPsychic) {
     alert("Try to guess what letter I'm thinking of!");
@@ -44,9 +45,11 @@ document.onkeyup = function (event) {
 
 
     //Create if statement that sees if user & computer chose same key
+    //Create if for when user runs out of guesses
     if (userGuess === computerGuess) {
         wins++;
         alert("YOU GUESSED RIGHT!");
+        reset();
     }
     //Create else if for when the user & computer dont chose the same key.
     else if (userGuess !== computerGuess) {
@@ -55,10 +58,9 @@ document.onkeyup = function (event) {
     else {
         alert("That was not a letter!");
     }
-    //Create if for when user runs out of guesses
     if (guessesLeft === 0) {
         losses++;
-        alert("YOU RAN OUT OF GUESSES! Definitely  n o t  psychic....bummer");
+        alert("YOU RAN OUT OF GUESSES! Definitely  n o t  psychic ....bummer");
         reset();
     }
 
