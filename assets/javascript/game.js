@@ -60,7 +60,7 @@ document.onkeyup = function (event) {
     }
     if (guessesLeft === 0) {
         losses++;
-        alert("YOU RAN OUT OF GUESSES! Definitely  n o t  psychic ....bummer");
+        alert("YOU RAN OUT OF GUESSES! Definitely NOT psychic ....bummer");
         reset();
     }
 
