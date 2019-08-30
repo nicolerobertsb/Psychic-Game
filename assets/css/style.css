@@ -5,6 +5,7 @@
   
   body {
       background-image: url("../images/vector-notepad-2111645_1280.png");
+      /* I couldnt figure out how to make the image stretch in a way that it did not make it warped, so if the browser is not minimized there a white block */
       font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
   }
   
